@@ -8,6 +8,14 @@ advisor (P184)](https://www.wikidata.org/wiki/Property:P184) relations.
 
 Required Python packages: requests, graphviz
 
+There are currently two scripts:
+
+ancestors2dot
+---
+
+Grab the complete ancestor tree of a specific researcher, and outputs it in
+the [graphviz](https://graphviz.org/) DOT format.
+
 Usage:
 
     ./ancestors2dot.py Qxxxxx [outfile.dot]
@@ -15,7 +23,23 @@ Usage:
     Qxxxxx: a researcher's Wikidata ID
     outfile.dot: file to write to if supplied; otherwise write to stdout
 
-You will need to have [graphviz](https://graphviz.org/) installed to actually
-graph the resulting dot file, by doing something like:
+You will need to have graphviz installed to actually graph the resulting DOT
+file, by doing something like:
 
     dot -Tpng personA.dot > personA.png
+
+common2dot
+---
+
+Given two researchers, graph the path to their most recent common ancestor, if
+any.
+
+Usage:
+
+    ./common2dot.py Q1xxxx Q2xxxx [outfile.dot]
+
+    Qxxxxx: two a researchers' Wikidata IDs
+    outfile.dot: file to write to if supplied; otherwise write to stdout
+
+Note that if the two researchers do not have any common ancestors *and* have
+large ancestor trees, the query may time out.
