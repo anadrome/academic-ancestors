@@ -44,5 +44,6 @@ Usage:
     Qxxxxx: two researchers' Wikidata IDs
     outfile.dot: file to write to if supplied; otherwise write to stdout
 
-Note that if the two researchers do not have any common ancestors *and* have
-large ancestor trees, the query may time out.
+Note that if the two researchers both have large ancestor trees, the query may
+time out. There is probably a way to optimize it so that doesn't happen
+(suggestions welcome).
