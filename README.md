@@ -13,8 +13,8 @@ There are currently two scripts:
 ancestors2dot
 ---
 
-Grab the complete ancestor tree of a specific researcher, and outputs it in
-the [graphviz](https://graphviz.org/) DOT format.
+Grab the complete ancestor tree of a specific researcher, and output it in
+[graphviz](https://graphviz.org/) DOT format.
 
 Usage:
 
@@ -38,7 +38,7 @@ Usage:
 
     ./common2dot.py Q1xxxx Q2xxxx [outfile.dot]
 
-    Qxxxxx: two a researchers' Wikidata IDs
+    Qxxxxx: two researchers' Wikidata IDs
     outfile.dot: file to write to if supplied; otherwise write to stdout
 
 Note that if the two researchers do not have any common ancestors *and* have
