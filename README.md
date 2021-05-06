@@ -5,6 +5,9 @@ A few Python scripts that construct academic ancestor graphs (i.e. chains of
 Ph.D. students and their Ph.D. advisors). This is done by sending SPARQL
 queries to [Wikidata](https://www.wikidata.org/) that follow the [doctoral
 advisor (P184)](https://www.wikidata.org/wiki/Property:P184) relations.
+See [this blog
+post](https://www.kmjn.org/notes/academic_ancestors_wikidata.html) for an
+explanation and examples.
 
 Required Python packages: requests, graphviz
 
